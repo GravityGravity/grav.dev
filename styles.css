@@ -1,0 +1,12 @@
+/* Styles for Grav.dev */
+#MainTitle {
+    color: #f7f0f0;
+    background-color: #3a3737;
+    text-align:center;
+}
+
+* {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
