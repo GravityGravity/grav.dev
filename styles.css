@@ -1,16 +1,26 @@
 /* Styles for Grav.dev */
 #MainTitle {
-    display: block;
     color: #f7f0f0;
     background-color: #3a3737;
     text-align:center;
-    margin-inline: 10px;
+    margin: 0px;
 }
 
 footer {
     font-size: 10px;
     font-style: italic;
     text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 1em;
+    padding: 1em;
 }
 
 * {
