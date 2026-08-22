@@ -1,8 +1,17 @@
 /* Styles for Grav.dev */
-#MainTitle {
+#main-title {
     color: #f7f0f0;
     background-color: #3a3737;
     text-align:center;
+    margin: 0px;
+}
+
+#main-desc{
+    margin: 0 auto;
+    background-color: aqua;
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px 0;
     margin: 0px;
 }
 
@@ -18,11 +27,16 @@ img {
     margin-right: auto;
 }
 
+.remove-bg {
+    mix-blend-mode: multiply;
+}
+
 body {
-    margin: 1em;
+    background-color: aliceblue;
+    margin: 0px auto;
     padding: 1em;
 }
 
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
 }
