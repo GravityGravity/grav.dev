@@ -1,8 +1,4 @@
 /* Styles for Grav.dev */
-* {
-    font-family: Tahoma, Verdana, sans-serif;
-}
-
 footer {
     font-size: 10px;
     font-style: italic;
@@ -10,9 +6,8 @@ footer {
 }
 
 img {
-    display: block;
     margin: 5px;
-    width: 500px;
+    width: 25%;
     height: auto;
     border-radius: 10px;
 }
@@ -20,7 +15,12 @@ img {
 body {
     background-color: aliceblue;
     margin: 0px auto;
-    padding: 1em;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* DEBUG */
+a { 
+    outline: 3px solid red;
 }
 
 #main-title {
@@ -36,7 +36,6 @@ body {
     font-size: 2rem;
     text-align: center;
     padding: 8px 0;
-    margin: 0px;
 }
 
 .epilogue img{
@@ -45,8 +44,24 @@ body {
     height: auto;
 }
 
-
 .remove-bg {
     mix-blend-mode: multiply;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.flex-item img {
+    width: 100%;
+    height: auto;
+}
