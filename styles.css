@@ -1,4 +1,28 @@
 /* Styles for Grav.dev */
+* {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+footer {
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 5px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0px auto;
+    padding: 1em;
+}
+
 #main-title {
     color: #f7f0f0;
     background-color: #3a3737;
@@ -21,30 +45,8 @@
     height: auto;
 }
 
-footer {
-    font-size: 10px;
-    font-style: italic;
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: 5px;
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
 
 .remove-bg {
     mix-blend-mode: multiply;
 }
 
-body {
-    background-color: aliceblue;
-    margin: 0px auto;
-    padding: 1em;
-}
-
-* {
-    font-family: Tahoma, Verdana, sans-serif;
-}
