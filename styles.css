@@ -1,8 +1,14 @@
 /* Styles for Grav.dev */
-footer {
-    font-size: 10px;
-    font-style: italic;
-    text-align: center;
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+    background-color: #06090A;
+    color: white;
+    margin: 0px auto;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 img {
@@ -13,34 +19,15 @@ img {
     display: block;
 }
 
-body {
-    background-color: aliceblue;
-    margin: 0px auto;
-    font-family: Tahoma, Verdana, sans-serif;
-}
-
-/* DEBUG */
-div { 
-    outline: 3px solid red;
-}
-
-#main-title {
-    color: #f7f0f0;
-    background-color: #3a3737;
-    text-align:center;
-    margin: 0px;
-}
-
-#main-desc{
-    background-color: aqua;
-    font-size: 2rem;
+footer {
+    font-size: 10px;
+    font-style: italic;
     text-align: center;
-    padding: 8px 0;
 }
 
-.remove-bg {
-    mix-blend-mode: multiply;
-}
+/* ==========================================================================
+   Layout
+   ========================================================================== */
 
 .flex-container {
     display: flex;
@@ -50,14 +37,13 @@ div {
     display: flex;
     flex-direction: row;
 }
- 
+
 .flex-col {
     display: flex;
     flex-direction: column;
 }
 
 .flex-list {
-    
     gap: 2px;
 }
 
@@ -74,14 +60,72 @@ div {
     height: auto;
 }
 
+.spacer25 {
+    height: 25px;
+    flex: 1 0 1;
+}
+
+.spacer50 {
+    height: 50px;
+    flex: 1 0 1;
+}
+
+.section {
+
+    margin: 10px;
+
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
 .items-center   { align-items: center; }
 .items-start    { align-items: flex-start; }
 .items-end      { align-items: flex-end; }
 .items-stretch  { align-items: stretch; }
- 
+
 .justify-center  { justify-content: center; }
 .justify-between { justify-content: space-between; }
 .justify-around  { justify-content: space-around; }
 .justify-start   { justify-content: flex-start; }
 .justify-end     { justify-content: flex-end; }
- 
+
+.remove-bg {
+    mix-blend-mode: multiply;
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+#main-title {
+    color: #f7f0f0;
+    text-align: center;
+    margin: 0px;
+}
+
+#main-desc {
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.header {
+    background-size: 1px;
+    background: linear-gradient(345deg, #06090A 70%, #0D2B30 90%, #17555C 200%)
+}
+
+.footer {
+    background: linear-gradient(175deg, #06090A 45%, #8b5d35 150%);
+    color: #6C8B8C;
+}
+
+/* ==========================================================================
+   Debug
+   ========================================================================== */
+
+/* DEBUG */
+/* div {
+    outline: 1px solid red;
+} */

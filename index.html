@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grav</title>
+    <title>Grav.dev</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="flex-container flex-col">
+    <!-- Header Section -->
+    <div class="flex-container flex-col header">
+        <div class="flex-container flex-col">
+            <div class="spacer25"></div>
+        </div>
+
         <div>
-            <h1 id="main-title">Grav.dev  </h1>
+            <h1 id="main-title">Grav.dev</h1>
         </div>
 
         <div id="main-desc">
             <p>Welcome! A site to show off webdesign and dev projects</p>
         </div>
+
+        <div class="flex-container flex-col">
+            <div class="spacer50"></div>
+        </div>
     </div>
 
     <!-- Education Section -->
-    <div class="flex-container flex-col">
+    <div class="flex-container flex-col section">
         <h3>EDUCATION</h3>
         <p>Bachelors of Science in Computer Science</p>
     </div>
 
-    <!-- Project highlighting section -->
-    <div class="flex-container flex-col">
+    <!-- Projects Section -->
+    <div class="flex-container flex-col section">
         <h3>PROJECTS</h3>
         <ul>
             <li>Full-Stack Bank Page</li>
@@ -36,30 +45,32 @@
     </div>
 
     <!-- Github Advertising Section -->
-    <div class="flex-container flex-col">
+    <div class="flex-container flex-col section">
         <h3>GITHUB </h3>
 
-        
         <div class="flex-item">
             <a href="https://github.com/GravityGravity" target="_blank" rel="noreferrer" class="flex-col">
                 <img src="imgs/github_screenshot.png" alt="Screenshot of my github main profile page">
                 <img src="imgs/github_commit_stats.png" alt="Screenshot of github commit status from 2026">
             </a>
 
-
-            <a href="https://github.com/GravityGravity"><button><strong>Github link</strong></button></a>
-
+            <a href="https://github.com/GravityGravity" target="_blank" rel="noreferrer" class="button-link">
+                <strong>Github link</strong>
+            </a>
         </div>
     </div>
 
-    <div class="flex-col items-center">
-        <img src="imgs/earth.svg" class="remove-bg" alt="black and white outline image of earth" style="width: 50px; height: auto;">
-        <footer>
-            This site is a project to attempt to make sites without the use of generative code from AI agents.
-        </footer>
+    <!-- Footer Section -->
+    <div class="flex-container flex-col footer">
+        <div class="spacer50"></div>
+
+        <div class="flex-col items-center">
+            <img src="imgs/earth.svg" class="remove-bg" alt="black and white outline image of earth" style="width: 50px; height: auto;">
+            <footer>
+                This site is a project to attempt to make sites without the use of generative code from AI agents.
+            </footer>
+        </div>
     </div>
-
-
 
 </body>
 </html>
