@@ -58,8 +58,7 @@ footer {
 }
 
 .flex-item img {
-    width: 500px
-    height: auto;
+    width: 500px;
     flex: 1 0 auto;
 }
 
