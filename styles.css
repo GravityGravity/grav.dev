@@ -5,6 +5,8 @@
    ========================================================================== */
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #06090A;
     color: white;
     margin: 0px auto;
@@ -62,7 +64,7 @@ footer {
 
 .spacer25 {
     height: 25px;
-    flex: 1 0 1;
+    flex: 1 0 25px;
 }
 
 .spacer50 {
@@ -71,9 +73,7 @@ footer {
 }
 
 .section {
-
     margin: 10px;
-
 }
 
 /* ==========================================================================
@@ -100,8 +100,11 @@ footer {
    ========================================================================== */
 
 #main-title {
-    color: #f7f0f0;
+    background: linear-gradient(90deg, #5EEAD4 50%,#F4A259 51%);
+    background-clip: text;
+    color: rgb(0 0 0 / 20%);
     text-align: center;
+    font-size: 50px;
     margin: 0px;
 }
 
@@ -126,6 +129,8 @@ footer {
    ========================================================================== */
 
 /* DEBUG */
-/* div {
+div,
+h1,
+p{
     outline: 1px solid red;
-} */
+}
