@@ -5,6 +5,8 @@
    ========================================================================== */
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #06090A;
     color: white;
     margin: 0px auto;
@@ -56,24 +58,18 @@ footer {
 }
 
 .flex-item img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    flex: 1 0 auto;
 }
 
 .spacer25 {
     height: 25px;
-    flex: 1 0 1;
+    flex: 1 0 25px;
 }
 
 .spacer50 {
     height: 50px;
     flex: 1 0 1;
-}
-
-.section {
-
-    margin: 10px;
-
 }
 
 /* ==========================================================================
@@ -100,8 +96,13 @@ footer {
    ========================================================================== */
 
 #main-title {
-    color: #f7f0f0;
+    font-family: Tahoma, sans-serif;
+    background: conic-gradient(from 205deg at 50% 50%, #FFB020, #E5484D, #3ECF8E, #FFB020);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(0 0 0 / 0%);
     text-align: center;
+    font-size: 50px;
     margin: 0px;
 }
 
@@ -116,16 +117,96 @@ footer {
     background: linear-gradient(345deg, #06090A 70%, #0D2B30 90%, #17555C 200%)
 }
 
-.footer {
-    background: linear-gradient(175deg, #06090A 45%, #8b5d35 150%);
-    color: #6C8B8C;
+.nav-bar {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--ash);
+    font-size: 24px;
+    color: black;
+}
+
+.nav-bar h3 {
+    flex: 0 1 0;
+    margin: 0 0 0 0;
+}
+
+.content {
+    flex 1 1 auto;
+}
+
+.section {
+    margin: 10px;
+}
+
+.section .title {
+    font-size: 24px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 16px;
+}
+
+.projects h3{
+    margin: 0px;
+}
+
+#footer {
+    background: var(--gradient-corona);
+    color: black;
+    padding: 16px;
+    justify-self: flex-end;
+}
+
+/* ==========================================================================
+   Color Var
+   ========================================================================== */
+
+:root {
+    /* Core palette */
+    --black: #080706;
+    --hull: #121110;
+    --shadow: #2A2724;
+    --steel: #55504A;
+    --ash: #928C83;
+    --fog: #CFC9C0;
+    --paper: #F5F2ED;
+    --white: #FFFFFF;
+    --corona: #FFB020;
+    --plasma: #D97706;
+    --signal: #3ECF8E;
+    --alert: #E5484D;
+
+    /* Near-black surface ramp */
+    --black-950: #040404;
+    --black-900: #080706;
+    --black-850: #121110;
+    --black-800: #1C1A18;
+    --black-750: #2A2724;
+    --black-700: #3C3833;
+    --black-650: #55504A;
+
+    /* Text on dark */
+    --text-primary: #FFFFFF;
+    --text-secondary: #A8A29A;
+    --text-muted: #7A756D;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #080706 0%, #E5484D 48%, #FFB020 100%);
+    --gradient-corona: radial-gradient(95% 105% at 18% 112%, #FFB020 0%, #D97706 32%, #E5484D 62%, #080706 100%);
+    --gradient-core-bloom: conic-gradient(from 205deg at 55% 45%, #FFB020, #E5484D, #3ECF8E, #121110, #FFB020);
+    --gradient-paper-fade: linear-gradient(180deg, #FFFFFF, #CFC9C0);
+    --gradient-contrast: linear-gradient(90deg, #F5F2ED, #55504A 55%, #080706);
 }
 
 /* ==========================================================================
    Debug
    ========================================================================== */
 
-/* DEBUG */
-/* div {
+/* div,
+h1,
+p{
     outline: 1px solid red;
 } */
