@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     background-color: #06090A;
     color: white;
-    margin: 0px auto;
+    margin: 0;
     font-family: Tahoma, Verdana, sans-serif;
 }
 
@@ -47,29 +47,6 @@ footer {
 
 .flex-list {
     gap: 2px;
-}
-
-/* Remove these vars */
-.flex-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-.flex-item img {
-    width: 500px;
-    flex: 1 0 auto;
-}
-
-.spacer25 {
-    height: 25px;
-    flex: 1 0 25px;
-}
-
-.spacer50 {
-    height: 50px;
-    flex: 1 0 1;
 }
 
 /* ==========================================================================
@@ -114,16 +91,20 @@ footer {
 
 .header {
     background-size: 1px;
-    background: linear-gradient(345deg, #06090A 70%, #0D2B30 90%, #17555C 200%)
 }
 
 .nav-bar {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background: var(--ash);
+    background: var(--black-650);
     font-size: 24px;
-    color: black;
+    text-decoration: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--text-secondary);
 }
 
 .nav-bar h3 {
@@ -132,20 +113,37 @@ footer {
 }
 
 .content {
-    flex 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .section {
-    margin: 10px;
+    margin: 0px;
+    padding: 16px;
 }
 
 .section .title {
     font-size: 24px;
+    margin: 0px;
+}
+
+#education-section {
+    background-color: var(--black-800);
+}
+#education-section p {
+    margin: 0px;
+    padding: 16px 0 0 16px;
+}
+
+#projects-section {
+    background-color: var(--black-850);
+}
+#github-section img{
+    width: 1000px;
 }
 
 .projects ul {
     list-style: none;
-    padding: 0px;
+    padding: 8px 0;
     margin-left: 16px;
 }
 
@@ -153,11 +151,34 @@ footer {
     margin: 0px;
 }
 
+.quote {
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--black-700);
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    align-items: stretch;
+}
+
+.quote-imgs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.quote-imgs img {
+    width: 100px;
+    height: auto;
+    flex: 0 0 auto;
+}
+
 #footer {
     background: var(--gradient-corona);
-    color: black;
+    color: var(--gradient-paper-fade);
     padding: 16px;
-    justify-self: flex-end;
+    align-items: flex-end;
+    font-size: xx-large;
+    font-weight: 900;
 }
 
 /* ==========================================================================
